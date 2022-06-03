@@ -18,9 +18,7 @@ int main(void)
 			putchar(count + '0');
 		else
 			if (count > 64)
-			char letter = count;
-
-			putchar(letter);
+			putchar(count + 'A');
 
 		count++;
 	}
