@@ -16,14 +16,7 @@ int main(void)
 	{
 		char letter = count;
 
-		if (count == 101)
-			count = 102;
-			char letter = count;
-		
-		else if (count == 113)
-			count = 114;
-			char letter = count;
-		else
+		if (count != 101) && (count != 113)
 		
 		putchar(letter);
 		count++;
