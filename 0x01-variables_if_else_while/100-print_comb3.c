@@ -19,8 +19,8 @@ int main(void)
 
 		while (second < 58)
 		{
-			putchar(first + '0');
-			putchar(second + '0');
+			putchar(first);
+			putchar(second);
 
 		while (first != 56 && second != 57)
 		{
