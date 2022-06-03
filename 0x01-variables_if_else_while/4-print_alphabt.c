@@ -15,10 +15,14 @@ int main(void)
 	while (count <= 122)
 	{
 		if (count == 101)
+		{
 			count = 102;
+		}
 
 		if (count == 113)
+		{
 			count = 114;
+		}
 
 		char letter = count;
 
