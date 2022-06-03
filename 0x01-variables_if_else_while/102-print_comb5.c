@@ -19,7 +19,7 @@ int main(void)
 		while (second < 58)
 		{
 			fifth = second + 1;
-			int fourth = first;
+			fourth = first;
 			while (fourth < 58)
 			{
 				while (fifth < 58)
