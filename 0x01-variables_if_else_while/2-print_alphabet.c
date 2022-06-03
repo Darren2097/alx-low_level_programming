@@ -16,7 +16,7 @@ int main(void)
 	do {
 		char letter = count;
 
-		putchar("%c", letter);
+		putchar(letter);
 		count++;
 	}
 	return (0);
