@@ -14,10 +14,9 @@ int main(void)
 
 	count = 'a';
 
-	while (count <= 'z)
-	do
-	{
-		putchar("%c",count);
+	while (count <= 'z')
+	do {
+		putchar("%c", count);
 		count++;
 	}
 	return (0);
