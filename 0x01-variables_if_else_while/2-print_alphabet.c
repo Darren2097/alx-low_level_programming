@@ -13,7 +13,7 @@ int main(void)
 	int count = 97;
 
 	while (count <= 122)
-	do {
+	{
 		char letter = count;
 
 		putchar(letter);
