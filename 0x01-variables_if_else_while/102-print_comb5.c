@@ -17,6 +17,7 @@ int main(void)
 
 	while (first < 58)
 	{
+		second = first + 1;
 		while (second < 58)
 		{
 			while (fourth < 58)
