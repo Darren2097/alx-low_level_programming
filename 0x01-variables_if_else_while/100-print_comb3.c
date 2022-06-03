@@ -22,12 +22,14 @@ int main(void)
 			putchar(first);
 			putchar(second);
 
-		while (first != 56 && second != 57)
+		if (first < 56 || second < 57)
 		{
 			putchar(44);
 			putchar(32);
 		}
+
 		second++;
+
 		}
 
 		first++;
