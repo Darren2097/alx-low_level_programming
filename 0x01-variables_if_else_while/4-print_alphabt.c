@@ -16,11 +16,9 @@ int main(void)
 	{
 		if (count == 101)
 			count = 102;
-		END;
 
 		if (count == 113)
 			count = 114;
-		END;
 
 		char letter = count;
 
