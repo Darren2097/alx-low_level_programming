@@ -12,13 +12,13 @@ int main(void)
 {
 	int count = 0;
 
-	while (count <= 102)
+	while (count <= 48)
 	{
 		if (count < 10)
 			putchar(count + '0');
 		else
-			if (count > 96)
-			putchar(count + '0');
+			if (count > 41)
+			putchar(count + 'a');
 
 		count++;
 	}
