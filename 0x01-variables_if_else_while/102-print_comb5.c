@@ -12,6 +12,7 @@ int main(void)
 {
 	int first = 48;
 	int second = 48;
+	int fourth = 48;
 	int fifth = 48;
 
 	while (first < 58)
@@ -19,7 +20,6 @@ int main(void)
 		while (second < 58)
 		{
 			fifth = second + 1;
-			fourth = first;
 			while (fourth < 58)
 			{
 				while (fifth < 58)
