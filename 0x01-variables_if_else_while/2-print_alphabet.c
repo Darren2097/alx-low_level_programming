@@ -16,7 +16,7 @@ int main(void)
 
 	while count <= 'z'
 	{
-		putchar("%c", count);
+		putchar(count);
 		count++;
 	}
 	return (0);
