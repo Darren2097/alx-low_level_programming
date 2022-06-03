@@ -12,12 +12,12 @@ int main(void)
 {
 	int count = 0;
 
-	while (count <= 47)
+	while (count <= 37)
 	{
 		if (count < 10)
 			putchar(count + '0');
 		else
-			if (count > 41)
+			if (count > 31)
 			putchar(count + 'A');
 
 		count++;
