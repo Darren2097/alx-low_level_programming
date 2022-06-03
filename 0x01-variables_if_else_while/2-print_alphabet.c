@@ -10,13 +10,13 @@
 
 int main(void)
 {
-	char count;
+	int count = 97;
 
-	count = 'a';
-
-	while (count <= 'z')
+	while (count <= 122)
 	do {
-		putchar("%c", count);
+		char letter = count;
+
+		putchar("%c", letter);
 		count++;
 	}
 	return (0);
