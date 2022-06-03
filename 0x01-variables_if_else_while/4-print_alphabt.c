@@ -14,11 +14,9 @@ int main(void)
 
 	while (count <= 122)
 	{
-		char letter = count;
-
-		if (count != 101) && (count != 113)
+		if (count != 101) || (count != 113)
 		
-		putchar(letter);
+		putchar(count);
 		count++;
 	}
 	putchar('\n');
