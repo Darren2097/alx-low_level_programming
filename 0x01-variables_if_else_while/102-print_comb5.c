@@ -33,6 +33,7 @@ int main(void)
 					if (first < 57 || second < 56 || fourth < 57 || fifth < 57)
 					{
 						putchar(44);
+						putchar(32);
 					}
 					fifth++;
 				}
