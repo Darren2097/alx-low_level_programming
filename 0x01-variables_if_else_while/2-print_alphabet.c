@@ -12,11 +12,11 @@ int main(void)
 {
 	int count = 97;
 
-	while (count <= 122)
+	while (count < 123)
 	{
 		char letter = count;
 
-		putchar("%c\n", letter);
+		putchar(letter);
 		count++;
 	}
 	return (0);
