@@ -14,17 +14,19 @@ int main(void)
 
 	while (count <= 122)
 	{
+		char letter = count;
+
 		if (count == 101)
 		{
 			count = 102;
+			char letter = count;
 		}
-
+		
 		if (count == 113)
 		{
 			count = 114;
+			char letter = count;
 		}
-
-		char letter = count;
 
 		putchar(letter);
 		count++;
