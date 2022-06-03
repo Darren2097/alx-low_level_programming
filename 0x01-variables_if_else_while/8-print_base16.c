@@ -18,7 +18,7 @@ int main(void)
 			putchar(count + '0');
 		else
 			if (count > 96)
-			putchar(count + 'a');
+			putchar(count - 10 + 'a');
 
 		count++;
 	}
