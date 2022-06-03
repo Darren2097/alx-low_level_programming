@@ -12,14 +12,17 @@ int main(void)
 {
 	int count = 0;
 
-	while (count <= 8)
+	while (count <= 9)
 	{
 		putchar(count + '0');
-		putchar(44);
-		putchar(32);
+
+		if (count != 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
 		count++;
 	}
-	putchar(count + '0');
 
 	putchar('\n');
 	return (0);
