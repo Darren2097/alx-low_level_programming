@@ -11,20 +11,17 @@
 int main(void)
 {
 	int first = 48;
+	int second = 48;
+	int fourth = 48;
+	int fifth = 48;
 
 	while (first < 58)
 	{
-		int second = 48;
-
 		while (second < 58)
 		{
-			fifth = second + 1;
-			int fourth = first;
-
 			while (fourth < 58)
 			{
-				int fifth = 48;
-
+				fifth = fourth + 1;
 				while (fifth < 58)
 				{
 					putchar(first);
