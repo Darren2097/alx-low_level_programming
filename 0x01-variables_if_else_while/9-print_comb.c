@@ -11,14 +11,12 @@
 int main(void)
 {
 	int count = 0;
-	char space = 32;
-	char comma = 44;
 
 	while (count < 10)
 	{
 		putchar(count + '0');
-		putchar(comma);
-		putchar(space);
+		putchar(44);
+		putchar(32);
 		count++;
 	}
 
