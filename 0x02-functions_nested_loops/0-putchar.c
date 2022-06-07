@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -10,14 +10,15 @@
 
 int main(void)
 {
-	char c[9] = "_putchar";
+	char c[8] = "_putchar";
 	int count = 0;
 
-	while (count < 8)
+	while (count < 9)
 	{
-		putchar(c[count]);
+		_putchar(c[count]);
 		count++;
 	}
-	putchar('\n');
+
+	_putchar('\n');
 	return (0);
 }
