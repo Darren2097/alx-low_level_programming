@@ -15,14 +15,15 @@ void print_alphabet_x10(void)
 	while (count1 <= 10)
 	{
 		count2 = 97;
+
 		while (count2 < 123)
 		{
 			char c = count2;
+
 			_putchar(c);
 			count2++;
 		}
 		_putchar('\n');
 		count1++;
 	}
-	return;
-}	
+}
