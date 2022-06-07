@@ -2,22 +2,26 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @int: int is an ASCII character
+ * @i: i is an ASCII character
  *
- * Return: void
+ * Return: returns the absolute number
  */
 
-int _abs(int)
+int _abs(int i)
 {
 	int i;
 
 	if (i < 0)
 	{
 		i = (-1 * i);
-		_putchar(i);
+		return (i);
+	}
+	else if (i > 0)
+	{
+		return (i);
 	}
 	else
 	{
-		_putchar(i);
+		return (0);
 	}
 }
