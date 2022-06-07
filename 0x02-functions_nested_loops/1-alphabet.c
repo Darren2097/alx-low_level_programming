@@ -14,9 +14,9 @@ void print_alphabet(void)
 	{
 		char letter = count;
 
-		_putchar(letter);
+		putchar(letter);
 		count++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return;
 }
