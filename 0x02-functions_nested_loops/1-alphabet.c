@@ -1,9 +1,9 @@
-#include "1-main.c"
+#include "main.h"
 
 /**
- * main - Check code
+ * main - Check the code
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 
 int main(void)
