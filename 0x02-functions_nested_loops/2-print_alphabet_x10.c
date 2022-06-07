@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 
 	count1 = 0;
 
-	while (count1 <= 10)
+	while (count1 < 10)
 	{
 		count2 = 97;
 
