@@ -24,5 +24,6 @@ void print_alphabet(void)
 		putchar(letter);
 		count++;
 	}
+	putchar('\n');
 	return;
 }
