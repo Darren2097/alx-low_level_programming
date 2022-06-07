@@ -2,18 +2,18 @@
 
 /**
  * print_last_digit - Prints the last digit of a number
- * @l: l is an ASCII character
+ * @c: c is an ASCII character
  *
  * Return: returns the value of the last digit
  */
 
-int print_last_digit(int l)
+int print_last_digit(int c)
 {
-	int last = l % 10;
+	int last = c % 10;
 
-	if (l < 0)
+	if (c < 0)
 	{
-		l = (-1) * l;
+		c = (-1) * c;
 	}
 
 	_putchar(last + '0');
