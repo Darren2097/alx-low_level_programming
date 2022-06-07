@@ -10,8 +10,14 @@
 
 int main(void)
 {
-	char *c[8] = "_putchar";
+	char c[8] = "_putchar";
+	int count = 0;
 
-	_putchar(*c);
+	while (count < 9)
+	{
+		_putchar(c[count]);
+		count++;
+	}
+
 	return (0);
 }
