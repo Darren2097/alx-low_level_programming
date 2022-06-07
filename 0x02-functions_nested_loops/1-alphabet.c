@@ -1,17 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - Check the code
+ * print_alphabet - prints the alphabet
  *
- * Return: Always 0
+ * Return: void
  */
-
-int main(void)
-{
-	void print_alphabet(void);
-	return (0);
-}
 
 void print_alphabet(void)
 {
