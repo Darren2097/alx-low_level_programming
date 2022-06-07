@@ -18,5 +18,5 @@ void print_alphabet(void)
 		count++;
 	}
 
-	return (0);
+	return;
 }
