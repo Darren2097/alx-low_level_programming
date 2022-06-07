@@ -1,22 +1,13 @@
-#include <stdio.h>
+#include "1-main.h"
 
 /**
- * main - Entry point
+ * main - Check code
  *
- * Description: prints the alphabet in lowercase
- *
- * Return: Always 0 (success)
+ * Return: Always 0.
  */
 
 int main(void)
 {
-	int count = 97;
-
-	while (count < 123)
-	{
-		char letter = count;
-		putchar(letter);
-		count++;
-	}
-
+	print_alphabet();
 	return (0);
+}
