@@ -13,7 +13,7 @@ int main(void)
 	char c[8] = "_putchar";
 	int count = 0;
 
-	while (count < 9)
+	while (count < 8)
 	{
 		_putchar(c[count]);
 		count++;
