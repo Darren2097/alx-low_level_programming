@@ -10,4 +10,4 @@ int _isalpha(int c);
 
 int print_sign(int c);
 
-int _abs(int i);
+int _abs(int c);
