@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long int a, b, sum;
+	unsigned long long int a, b, sum;i
 	int count;
 
 	a = 0;
@@ -21,12 +21,12 @@ int main(void)
 	while (count < 98)
 	{
 		sum = a + b;
-		printf("%lu, ", sum);
+		printf("%llu, ", sum);
 		a = b;
 		b = sum;
 		count++;
 	}
 
-	printf("%lu\n", sum);
+	printf("%llu\n", sum);
 	return (0);
 }
