@@ -8,15 +8,20 @@
 
 void jack_bauer(void)
 {
-	int hour1, hour2, min1, min2;
+	int hour1, hour2, min1, min2, max;
 
 	hour1 = 48;
+	max = 58;
 
 	while (hour1 < 51)
 	{
+		if (hour1 == 51)
+		{
+			max = 52;
+		}
 		hour2 = 48;
 
-		while (hour2 < 52)
+		while (hour2 < max)
 		{
 			min1 = 48;
 
