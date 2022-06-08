@@ -15,7 +15,7 @@ int main(void)
 	sum = 0;
 	num = 0;
 
-	while (sum < 1024)
+	while (num < 1024)
 	{
 		if (num % 3 == 0 || num % 5 == 0)
 		{
