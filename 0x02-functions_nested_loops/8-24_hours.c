@@ -10,21 +10,21 @@ void jack_bauer(void)
 {
 	int hour1, hour2, min1, min2;
 
-	hour1 = 0;
+	hour1 = 48;
 
-	while (hour1 < 3)
+	while (hour1 < 51)
 	{
-		hour2 = 0;
+		hour2 = 48;
 
-		while (hour2 < 4)
+		while (hour2 < 52)
 		{
-			min1 = 0;
+			min1 = 48;
 
-			while (min1 < 6)
+			while (min1 < 54)
 			{
-				min2 = 0;
+				min2 = 48;
 
-				while (min2 < 10)
+				while (min2 < 58)
 				{
 					_putchar(hour1);
 					_putchar(hour2);
