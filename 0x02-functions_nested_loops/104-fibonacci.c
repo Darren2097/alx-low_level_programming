@@ -18,7 +18,7 @@ int main(void)
 	sum = 0;
 	count = 0;
 
-	while (count < 99)
+	while (count < 98)
 	{
 		sum = a + b;
 		printf("%lu, ", sum);
