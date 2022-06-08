@@ -15,7 +15,7 @@ void jack_bauer(void)
 
 	while (hour1 < 51)
 	{
-		if (hour1 == 51)
+		if (hour1 == 50)
 		{
 			max = 52;
 		}
