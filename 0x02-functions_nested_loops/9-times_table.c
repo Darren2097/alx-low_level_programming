@@ -24,13 +24,18 @@ void times_table(void)
 			{
 				result = i * j;
 				_putchar(result + '0');
-				_putchar(',');
-				_putchar(32);
+
+				if (j != 9)
+				{
+					_putchar(44);
+					_putchar(32);
+				}
+
 				j++;
 			}
+			_putchar('\n');
 			i++;
 		}
-		_putchar('\n');
 		count++;
 	}
 }
