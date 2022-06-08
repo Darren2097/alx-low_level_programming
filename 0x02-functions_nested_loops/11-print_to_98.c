@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
  * print_to_98 - prints all natural numbers to 98
- * @n: n is an integer
+ * @n: integer value
  *
  * Return: void
  */
@@ -14,12 +14,12 @@ void print_to_98(int n)
 	{
 		while (n != 98)
 		{
-			_putchar(n + '0');
+			printf(%d, n);
 
 			if (n != 98)
 			{
-				_putchar(44);
-				_putchar(32);
+				printf(',');
+				printf(' ');
 			}
 
 			n++;
@@ -29,20 +29,20 @@ void print_to_98(int n)
 		{
 		while (n != 98)
 		{
-			_putchar(n + '0');
+			printf(%d, n);
 
 			if (n != 98)
 			{
-				_putchar(44);
-				_putchar(32);
+				printf(',');
+				printf(' ');
 			}
 
-			n++;
+			n--;
 		}
 		}
 		else
 		{
-		_putchar(n);
-		_putchar('\n');
+			printf(%d, n);
+			printf('\n');
 		}
 }
