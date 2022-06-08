@@ -10,7 +10,6 @@ void times_table(void)
 {
 	int r, c, result, i, j;
 
-	count = 0;
 	r = 0;
 
 	while (r < 10)
