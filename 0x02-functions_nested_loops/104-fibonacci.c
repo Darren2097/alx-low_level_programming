@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdint.h>
 
 /**
  * main - Entry point
@@ -11,7 +10,7 @@
 
 int main(void)
 {
-	unsigned long long int a, b, sum;
+	unsigned long int a, b, sum;
 	int count;
 
 	a = 0;
@@ -22,12 +21,12 @@ int main(void)
 	while (count < 98)
 	{
 		sum = a + b;
-		printf("%llu, ", sum);
+		printf("%lu, ", sum);
 		a = b;
 		b = sum;
 		count++;
 	}
 
-	printf("%llu\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
