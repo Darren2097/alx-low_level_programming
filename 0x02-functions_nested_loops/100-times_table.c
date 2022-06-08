@@ -2,26 +2,28 @@
 
 /**
  * print_times_table - prints the n time table
+ * @n: n is an integer
  *
  * Return: void
  */
 
 void print_times_table(int n)
 {
-	int r, c, result, i, j;
+	int r, c, result, i, j, h;
 
 	r = 0;
 
 	if (n > 0 && n < 16)
 	{
-		while (r <= n)
+		while (n >= r)
 		{
 			c = 0;
-			while (c <= n)
+			while (n >= c)
 			{
 				result = r * c;
 				i = result / 10;
 				j = result % 10;
+				h = result / 100;
 				
 				if (c == 0)
 				{
