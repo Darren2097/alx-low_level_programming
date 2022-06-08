@@ -12,8 +12,8 @@ int main(void)
 {
 	int a, b, count, sum;
 
-	a = 1;
-	b = 2;
+	a = 0;
+	b = 1;
 	sum = 0;
 	count = 0;
 
