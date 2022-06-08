@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: prints the sum of the even-valued terms in the fibonacci sequence
+ * Description: prints the sum of the even terms in the fibonacci sequence
  *
  * Return: Always 0 (success)
  */
@@ -11,7 +11,7 @@
 int main(void)
 {
 	long int a, b, sum, totsum;
-	
+
 	a = 0;
 	b = 1;
 	sum = 0;
