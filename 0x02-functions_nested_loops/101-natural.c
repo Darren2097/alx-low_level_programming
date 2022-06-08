@@ -10,25 +10,18 @@
 
 int main(void)
 {
-	int num3, num5, sum;
+	int num, sum;
 
 	sum = 0;
-	num3 = 0;
-	num5 = 0;
+	num = 0;
 
 	while (sum < 1024)
 	{
-		if (num3 % 3 == 0)
+		if (num % 3 == 0 || num % 5 == 0)
 		{
-			sum = sum + num3;
+			sum = sum + num;
+			num++;
 		}
-		else if (num5 % 5 == 0)
-		{
-			sum = sum + num5;
-		}
-
-		num3++;
-		num5++;
 	}
 
 	printf("%d\n", sum);
