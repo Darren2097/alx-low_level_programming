@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	int a, b, count, sum;
+	long int a, b, sum;
+	int count;
 
 	a = 0;
 	b = 1;
@@ -20,12 +21,12 @@ int main(void)
 	while (count <= 50)
 	{
 		sum = a + b;
-		printf("%d, ", sum);
+		printf("%li, ", sum);
 		a = b;
 		b = sum;
 		count++;
 	}
 
-	printf("%d\n", sum);
+	printf("%li\n", sum);
 	return (0);
 }
