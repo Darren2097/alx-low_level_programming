@@ -26,7 +26,7 @@ int main(void)
 		b = sum;
 		count++;
 	}
-
+	sum =  a + b;
 	printf("%li\n", sum);
 	return (0);
 }
