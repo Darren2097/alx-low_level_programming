@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <xc.h>
 
 /**
  * main - Entry point
@@ -22,12 +23,12 @@ int main(void)
 	while (count < 98)
 	{
 		sum = a + b;
-		printf("%d, ", sum);
+		printf("%llu, ", sum);
 		a = b;
 		b = sum;
 		count++;
 	}
 
-	printf("%d\n", sum);
+	printf("%llu\n", sum);
 	return (0);
 }
