@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints all natural numbers to 98
- * @n: n is an ASCII character
+ * @n: n is an integer
  *
  * Return: void
  */
