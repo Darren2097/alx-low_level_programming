@@ -18,7 +18,7 @@ int main(void)
 	sum = 0;
 	count = 0;
 
-	while (count <= 50)
+	while (count < 49)
 	{
 		sum = a + b;
 		printf("%li, ", sum);
