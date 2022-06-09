@@ -9,22 +9,26 @@
 
 void print_triangle(int size)
 {
-	int r, c, spaces, endspace;
+	int r, hash, spaces;
 
-	endspace = size - 1;
-	for (r = 0; r < size; r++)
+	hash = 0;
+
+	if (size > 0)
 	{
-		spaces = endspace;
-		for (c = spaces; c <= size; c++)
+		for (r = 0; r < size; r++)
 		{
-			while (spaces >= 0)
+			for (spaces = size - 1; spaces > r; spaces++)
 			{
 				_putchar(' ');
-				spaces--;
+
+				while (hash < r + 1)
+				{
+					_putchar('#');
+					hash++;
+				}
 			}
-			_putchar('#');
+			_putchar('\n');
+			r++;
 		}
-		endspace--;
-		_putchar('\n');
 	}
 }
