@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints a line across the terminal
- * @n: n is an ASCII character
+ * @n: length of the line
  *
  * Return: void
  */
