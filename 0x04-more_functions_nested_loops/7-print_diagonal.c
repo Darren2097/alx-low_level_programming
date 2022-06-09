@@ -21,6 +21,7 @@ void print_diagonal(int n)
 			while (spaces < numtimes)
 			{
 				_putchar(' ');
+				spaces++;
 			}
 			_putchar('\\');
 			_putchar('\n');
