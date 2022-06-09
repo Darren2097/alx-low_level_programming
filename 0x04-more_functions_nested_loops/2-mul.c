@@ -5,7 +5,7 @@
  * @a: Integer value
  * @b: Integer value
  *
- * Return: Always 0 (success)
+ * Return: returns the result of the multiplication
  */
 
 int mul(int a, int b)
@@ -13,7 +13,5 @@ int mul(int a, int b)
 	int result;
 
 	result = a * b;
-	_putchar(result);
-
-	return (0);
+	return (result);
 }
