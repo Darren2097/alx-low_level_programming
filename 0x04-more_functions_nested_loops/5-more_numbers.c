@@ -11,21 +11,27 @@ void more_numbers(void)
 	int i, j, first, second;
 
 	i = 0;
-	while (i <= 10)
+
+	while (i < 10)
 	{
-		first = '0';
-		while (first < '2')
+		while (first < 2)
 		{
-			second = '0';
-			while (first < '2' && second <= '5')
+			while (j <= second)
 			{
-				_putchar(second);
-				second++;
+				if (second == '4')
+				{
+					_putchar('1');
+				}
+				_putchar(j);
+				j++;
 			}
-			_putchar(first);
 			first++;
+			second = '4';
+			j = '0';
 		}
 		_putchar('\n');
 		i++;
+		first = 0;
+		second = '9';
 	}
 }
