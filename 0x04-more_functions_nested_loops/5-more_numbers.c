@@ -19,9 +19,7 @@ void more_numbers(void)
 			while (j <= second)
 			{
 				if (second == '4')
-				{
 					_putchar('1');
-				}
 				_putchar(j);
 				j++;
 			}
