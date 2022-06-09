@@ -13,16 +13,16 @@ void more_numbers(void)
 	i = 0;
 	while (i <= 10)
 	{
-		first = 0;
-		while (first < 2)
+		first = '0';
+		while (first < '2')
 		{
-			second = 0;
-			while (first < 2 && second <= 5)
+			second = '0';
+			while (first < '2' && second <= '5')
 			{
-				_putchar(second + '0');
+				_putchar(second);
 				second++;
 			}
-			_putchar(first + '0');
+			_putchar(first);
 			first++;
 		}
 		_putchar('\n');
