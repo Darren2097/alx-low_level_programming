@@ -10,10 +10,10 @@ void print_numbers(void)
 {
 	int count;
 
-	count = 48;
-	while (count <= 57)
+	count = 0;
+	while (count <= 9)
 	{
-		_putchar(count);
+		_putchar(count + '0');
 		count++;
 	}
 	_putchar('\n');
