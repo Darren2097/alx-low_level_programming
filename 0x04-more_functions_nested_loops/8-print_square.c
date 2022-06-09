@@ -14,10 +14,10 @@ void print_square(int size)
 	if (size > 0)
 	{
 		r = 0;
-		while (size >= r)
+		while (size > r)
 		{
 			c = 0;
-			while (size >= c)
+			while (size > c)
 			{
 				_putchar('#');
 				c++;
