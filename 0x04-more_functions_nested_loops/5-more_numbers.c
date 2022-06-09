@@ -33,5 +33,6 @@ void more_numbers(void)
 		i++;
 		first = 0;
 		second = '9';
+		j = '0';
 	}
 }
