@@ -10,17 +10,12 @@
 
 int _isdigit(int c)
 {
-	char c = c;
-
 	if (c >= '0' && c < '10')
 	{
-		if (isdigit(c))
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
