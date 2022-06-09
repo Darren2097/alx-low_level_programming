@@ -12,14 +12,16 @@ void more_numbers(void)
 
 	i = 0;
 
-	while (i < 10)
+	while (i <= 10)
 	{
 		while (first < 2)
 		{
 			while (j <= second)
 			{
 				if (second == '4')
+				{
 					_putchar('1');
+				}
 				_putchar(j);
 				j++;
 			}
