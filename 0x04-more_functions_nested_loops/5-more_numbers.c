@@ -10,9 +10,7 @@ void more_numbers(void)
 {
 	int i, j, first, second;
 
-	i = 0;
-
-	while (i <= 10)
+	for (i = 0; i < 10; i++)
 	{
 		while (first < 2)
 		{
@@ -30,7 +28,6 @@ void more_numbers(void)
 			j = '0';
 		}
 		_putchar('\n');
-		i++;
 		first = 0;
 		second = '9';
 		j = '0';
