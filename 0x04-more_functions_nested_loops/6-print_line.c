@@ -11,11 +11,19 @@ void print_line(int n)
 {
 	int numTimes;
 
-	numtimes = 0;
+	numTimes = 0;
 
-	while (n > numtimes)
+	if (n > 0)
 	{
-		_putchar('_');
-		numtimes++;
+		while (n > numTimes)
+		{
+			_putchar('_');
+			numtimes++;
+		}
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
