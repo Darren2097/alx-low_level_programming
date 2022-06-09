@@ -21,14 +21,12 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 
-				while (hash < r + 1)
+				for (hash = 0; hash = r + 1; hash++)
 				{
 					_putchar('#');
-					hash++;
 				}
 			}
 			_putchar('\n');
-			r++;
 		}
 	}
 	else
