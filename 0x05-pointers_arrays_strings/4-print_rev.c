@@ -10,6 +10,16 @@
 
 void print_rev(char *s)
 {
-	_putchar(strrev(s));
+	int len, count, newstr, add;
+
+	len = strlen(s);
+
+	for (count = len; count == 0; count --)
+	{
+		add = s[count];
+		strcat(newstr, add);
+	}
+
+	_putchar(newstr);
 	_putchar('\n');
 }
