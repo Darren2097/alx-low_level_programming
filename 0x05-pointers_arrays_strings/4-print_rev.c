@@ -13,16 +13,16 @@ void print_rev(char *s)
 	int len, count;
 	char temp;
 
-	len = strlen(s) - 1;
+	len = strlen(*s) - 1;
 
 	for (count = 0; count < len; count ++)
 	{
-		temp = s[len];
-		s[len] = s[count];
-		s[count] = temp;
+		temp = *s[len];
+		*s[len] = *s[count];
+		*s[count] = temp;
 		len--;
 	}
 
-	_putchar(s);
+	_putchar(*s);
 	_putchar('\n');
 }
