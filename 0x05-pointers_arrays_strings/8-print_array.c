@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 
 	count = 0;
 
-	for (n = n; n >= 0; n--)
+	while (n >= 0)
 	{
 		printf("%d", a[count]);
 
@@ -24,6 +24,7 @@ void print_array(int *a, int n)
 			printf(", ");
 		}
 		count++;
+		n--;
 	}
 	printf("\n");
 }
