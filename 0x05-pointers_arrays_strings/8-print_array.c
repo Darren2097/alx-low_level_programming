@@ -18,7 +18,7 @@ void print_array(int *a, int n)
 	{
 		if (count == last)
 		{
-			printf("%d", a[count]);
+			printf("%d\n", a[count]);
 		}
 		else
 		{
