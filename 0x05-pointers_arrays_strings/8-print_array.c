@@ -14,6 +14,14 @@ void print_array(int *a, int n)
 	int count, last;
 
 	last = n - 1;
+
+	if (n < 0 || n == 0)
+	{
+		n = 0;
+	}
+	else
+	{
+
 	for (count = 0; count < n; count++)
 	{
 		if (count == last)
@@ -24,5 +32,6 @@ void print_array(int *a, int n)
 		{
 			printf("%d, ", a[count]);
 		}
+	}
 	}
 }
