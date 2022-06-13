@@ -23,8 +23,8 @@ void print_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		count++;
 		n--;
+		count++;
 	}
 	printf("\n");
 }
