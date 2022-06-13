@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 
 	last = n - 1;
 
-	if (n < 0 || n == 0)
+	if (n < 0)
 	{
 		n = 0;
 	}
