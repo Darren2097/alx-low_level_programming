@@ -13,7 +13,7 @@ void print_array(int *a, int n)
 {
 	int count, last;
 
-	last = n;
+	last = n + 1;
 
 	for (count = 0; count < n; count++)
 	{
