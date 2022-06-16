@@ -11,7 +11,7 @@ char *cap_string(char *str)
 {
 	int count, prev;
 
-	for (count = 0; str[count] == '\0'; count++)
+	for (count = 0; str[count] != '\0'; count++)
 	{
 		prev = count - 1;
 
