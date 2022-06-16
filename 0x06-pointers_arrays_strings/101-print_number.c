@@ -7,8 +7,17 @@
  * Return: void
  */
 
-void print_number(int n)
+void print_number(long int n)
 {
-	_putchar(n + '0');
-	_putchar('\n');
+	if (n < 0)
+	{
+		_putchar('-');
+		_putchar(n + '0');
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar(n + '0');
+		_putchar('\n');
+	}
 }
