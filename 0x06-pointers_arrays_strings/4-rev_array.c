@@ -10,16 +10,13 @@
 
 void reverse_array(int *a, int n)
 {
-	int count;
+	int count, front, back;
 
-	for (count = n; count <= n; count--)
+	for (count = 0; count < n / 2; count++)
 	{
-		_putchar(a[count]);
-
-		if (count > 0)
-		{
-			_putchar(",");
-			_putchar(" ");
-		}
+		front = a[n - count];
+		back = a[count];
+		a[count] = front;
+		a[n - count] = back
 	}
 }
