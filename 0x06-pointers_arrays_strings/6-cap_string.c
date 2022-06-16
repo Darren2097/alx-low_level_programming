@@ -33,7 +33,7 @@ char *cap_string(char *str)
 				str[count] = str[count] - 32;
 			else if (str[prev] == 123 || str[prev] == 125)
 				str[count] = str[count] - 32;
-			else if (str[prev] >= 9 || str[prev] <= 10)
+			else if (str[prev] >= 9 && str[prev] <= 10)
 				str[count] = str[count] - 32;
 		}
 
