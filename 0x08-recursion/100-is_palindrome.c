@@ -7,13 +7,13 @@
  * Return: returns 1 if a string is a palindrome and 0 if not
  */
 
-int _is_palindrome(char *s)
+int is_palindrome(char *s)
 {
 	char rev;
 
 	if (*s != '\0')
 	{
-		_is_palindrome((s + 1));
+		is_palindrome((s + 1));
 		rev = *s;
 	}
 
