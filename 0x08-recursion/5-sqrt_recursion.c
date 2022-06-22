@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * check_sqrt - checks if number given is a perfect square and calculates
+ * its square root
+ * @num: num is an integer
+ * @count: count is an integer
+ *
+ * Return: returns the square root or -1 if its not a perfect square
+ */
+
+int check_sqrt(int num, int count)
+{
+	if (count * count == num)
+		return (count);
+	else if (count < num)
+		return (check_sqrt(num, count + 1));
+	else
+		return (-1);
+}
+
+/**
  * _sqrt_recursion - finds the natural square root of a number
  * @n: n is an integer
  *
@@ -21,21 +40,4 @@ int _sqrt_recursion(int n)
 		return (check_sqrt(n, i));
 }
 
-/**
- * check_sqrt - checks if number given is a perfect square and calculates
- * its square root
- * @num: num is an integer
- * @count: count is an integer
- *
- * Return: returns the square root or -1 if its not a perfect square
- */
 
-int check_sqrt(int num, int count)
-{
-	if (count * count == num)
-		return (count);
-	else if (count < num)
-		return (check_sqrt(num, count + 1));
-	else
-		return (-1);
-}
