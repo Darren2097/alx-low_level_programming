@@ -35,7 +35,7 @@ int check_sqrt(int num, int count)
 	if (count * count == num)
 		return (count);
 	else if (count < num)
-		count++;
+		return (check_sqrt(num, count + 1));
 	else
 		return (-1);
 }
