@@ -17,7 +17,7 @@ int _is_palindrome(char *s)
 		rev = *s;
 	}
 
-	if (rev == s)
+	if (rev == *s)
 	{
 		return (1);
 	}
