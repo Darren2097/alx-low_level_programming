@@ -34,8 +34,7 @@ int check_int(char *str)
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: returns 0 if all arguments are numbers, else returns 1 if one
- * argument is not a number
+ * Return: Always 0 (success)
  */
 
 int main(int argc, char *argv[])
@@ -61,6 +60,7 @@ int main(int argc, char *argv[])
 			else
 			{
 				printf("Error\n");
+				return (1);
 			}
 			i++;
 		}
