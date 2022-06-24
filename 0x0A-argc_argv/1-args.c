@@ -11,6 +11,10 @@
 
 int main(int argc, __attribute__((unused)) char *argv[])
 {
+	int args;
+
+	args = argc - 1;
+
 	printf("%d\n", argc);
 	return (0);
 }
