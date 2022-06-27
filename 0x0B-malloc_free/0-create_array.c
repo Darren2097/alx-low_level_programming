@@ -11,6 +11,7 @@
 
 char *create_array(unsigned int size, char c)
 {
+	unsigned int count;
 	char *ar;
 
 	if (size == 0)
@@ -26,7 +27,10 @@ char *create_array(unsigned int size, char c)
 			return (NULL);
 		}
 
-		ar[0] = c;
+		for (count = 0; count < size; count++)
+		{
+			*(ar[count]) = c;
+		}
 	}
 	free(ar);
 	return (ar);
