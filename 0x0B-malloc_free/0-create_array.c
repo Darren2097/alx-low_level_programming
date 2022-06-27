@@ -13,14 +13,14 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int count;
 	char *ar;
-	
+
 	if (size == 0)
 	{
 		return (NULL);
 	}
 	else
 	{
-		ar = (char*) malloc(size * sizeof(char));
+		ar = (char *) malloc(size * sizeof(char));
 
 		if (ar == NULL)
 		{
@@ -31,7 +31,6 @@ char *create_array(unsigned int size, char c)
 		{
 			*(ar + count) = c;
 		}
+		return (ar);
 	}
-	free(ar);
-	return (ar);
 }
