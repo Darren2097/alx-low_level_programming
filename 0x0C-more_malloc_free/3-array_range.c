@@ -11,27 +11,27 @@
 
 int *array_range(int min, int max)
 {
-	int count1, count2, count3, *ar;
+	int length, count1, count2, *ar;
 
-	if (min >= max)
+	if (min > max)
 	{
 		return (NULL);
 	}
 
-	count1 = (max - min) + 1;
+	length = max - min + 1;
 
-	ar = malloc(count1);
+	ar = malloc(length);
 
 	if (ar == NULL)
 	{
 		return (NULL);
 	}
 
-	count3 = 0;
-	for (count2 = min; count2 <= max; count2++)
+	count2 = 0;
+	for (count1 = min; count1 <= max; count1++)
 	{
-		ar[count3] = count2;
-		count3++;
+		ar[count2] = count1;
+		count2++;
 	}
 	return (ar);
 }
