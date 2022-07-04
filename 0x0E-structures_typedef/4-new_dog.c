@@ -35,7 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		length++;
 	}
-	dname = malloc(length * sizeof(char));
+	dname = malloc(length * sizeof(char) + 1);
 	for (count = 0; count < length; count++)
 	{
 		dname[count] = dogname[count];
