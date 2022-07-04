@@ -1,7 +1,40 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
+/**
+ * cpy - copies the string
+ * @str: string  variable
+ *
+ * Return: returns a pointer
+ */
+
+char *cpy(char *str)
+{
+	int count, length;
+	char *s;
+
+	if (str == NULL)
+		return (NULL);
+
+	length = 0;
+	while (*(str + length) != '\0')
+	{
+		length++;
+	}
+
+	s = malloc(length * sizeof(char) + 1);
+	if (s == NULL)
+		return (NULL);
+
+	for (count = 0; count < length; count++)
+	{
+		s[count] = str[count];
+	}
+	s[count] = '\0';
+
+	return (s);
+}
 
 /**
  * new_dog - creates a new dog
@@ -26,9 +59,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (NULL);
 	}
-
-	strcpy(dogname, name);
-	strcpy(dogowner, owner);
+	dogname = cpy(name);
+	dogowner = cpy(owner);
 
 	newdog->name = dogname;
 	newdog->age = age;
