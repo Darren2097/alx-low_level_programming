@@ -9,7 +9,7 @@
  * @age: age of dog
  * @owner: dogs owner
  *
- * Return: returns a pointer
+ * Return: returns new dog (dog_t)
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -18,7 +18,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *dogname, *dname, *dogowner;
 	int count, length;
 
-	length = 0;
 	newdog = malloc(sizeof(dog_t));
 	if (newdog == NULL)
 		return (NULL);
@@ -30,17 +29,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newdog);
 		return (NULL);
 	}
-
+	length = 0;
 	while (*(dogname + length) != '\0')
 	{
 		length++;
 	}
 	dname = malloc(length * sizeof(char) + 1);
+	if (dname == NULL)
+		return (NULL);
+
 	for (count = 0; count < length; count++)
 	{
 		*(dname + count) = *(dogname + count);
 	}
-
 	newdog->name = dname;
 	newdog->age = age;
 	newdog->owner = dogowner;
