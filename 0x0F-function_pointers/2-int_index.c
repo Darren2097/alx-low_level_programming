@@ -26,10 +26,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			if (outcome != 0)
 				return (count);
 		}
-		else
-		{
 			return (-1);
-		}
 	}
 	else
 	{
