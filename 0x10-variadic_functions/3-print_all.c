@@ -49,6 +49,7 @@ void printflt(va_list ap)
 void printstr(va_list ap)
 {
 	char *s = va_arg(ap, char *);
+
 	if (s == NULL)
 	{
 		printf("(nil)");
