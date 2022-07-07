@@ -13,8 +13,8 @@
 void print_numbers(const char *seperator, const unsigned int n, ...)
 {
 	va_list ap;
-	unsigned int count;
-	
+	unsigned int count, num;
+
 	if (n == 0)
 	{
 		printf("\n");
@@ -23,19 +23,20 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	va_start(ap, n);
 	for (count = 0; count < n; count++)
 	{
+		num = va_arg(ap, unsigned int);
 		if (seperator == NULL)
 		{
 			if (count == n - 1)
-				printf("%u\n", va_arg(ap, unsigned int));
+				printf("%u\n", num);
 			else
-				printf("%u", va_arg(ap, unsigned int));
+				printf("%u", num);
 		}
 		else
 		{
 			if (count == n - 1)
-				printf("%u\n", va_arg(ap, unsigned int));
+				printf("%u\n", num);
 			else
-				printf("%u%s", va_arg(ap, unsigned int), seperator);
+				printf("%u%s", num, seperator);
 		}
 	}
 
