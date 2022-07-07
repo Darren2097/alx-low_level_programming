@@ -69,7 +69,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i, j;
-	char s1 = "", s2 = ", ";
+	char *s1 = "", *s2 = ", ";
 
 	op_t ops[] = {
 		{'c', printchar},
