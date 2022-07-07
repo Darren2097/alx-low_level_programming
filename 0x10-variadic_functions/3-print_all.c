@@ -48,13 +48,14 @@ void printflt(va_list ap)
 
 void printstr(va_list ap)
 {
-	if (va_arg(ap, char *) == NULL)
+	char *s = va_arg(ap, char *);
+	if (s == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
 
-	printf("%s", va_arg(ap, char *));
+	printf("%s", s);
 }
 
 /**
