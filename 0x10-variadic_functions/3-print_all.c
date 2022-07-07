@@ -69,6 +69,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i, j;
+	char s1 = "", s2 = ", ";
 
 	op_t ops[] = {
 		{'c', printchar},
@@ -87,8 +88,9 @@ void print_all(const char * const format, ...)
 		{
 			if (ops[j].c == format[i])
 			{
+				printf("%s", s1);
 				ops[j].f(ap);
-				printf(", ");
+				s1 = s2;
 			}
 			j++;
 		}
