@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
- * struct list_t
+ * struct list_t - linked list
  * @str: string
  * @len: length of string
  * @next: points to the next node
