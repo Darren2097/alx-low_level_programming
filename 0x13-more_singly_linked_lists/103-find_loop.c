@@ -20,6 +20,7 @@ listint_t *find_listint_loop(listint_t *head)
 		{
 			one = one->next;
 			two = two->next->next;
+			head = head->next;
 		}
 		else
 		{
