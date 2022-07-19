@@ -18,9 +18,9 @@ size_t print_listint_safe(const listint_t *head)
 	nodes = 0;
 	while (head != NULL)
 	{
+		nodes++;
 		printf("%d\n", head->n);
 		head = head->next;
-		nodes++;
 	}
 
 	return (nodes);
