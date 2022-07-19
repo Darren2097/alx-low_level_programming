@@ -20,11 +20,16 @@ listint_t *find_listint_loop(listint_t *head)
 		{
 			one = one->next;
 			two = two->next->next;
-			head = head->next;
 		}
 		else
 		{
-			return (one);
+			while (head != NULL)
+			{
+				if (one == two)
+					return (one);
+				one = one->next;
+				two = two->next;
+			}
 		}
 	}
 	return (NULL);
