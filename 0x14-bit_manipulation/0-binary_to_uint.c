@@ -13,7 +13,7 @@ int _power(int base, int exp)
 {
 	int i, pow;
 
-	pow = 0;
+	pow = 1;
 	for (i = 0; i < exp; i++)
 	{
 		pow = pow * base;
