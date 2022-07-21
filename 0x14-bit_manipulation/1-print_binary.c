@@ -13,12 +13,6 @@ void print_binary(unsigned long int n)
 	int count;
 	unsigned long int digit;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-
 	for (count = 63; count >= 0; count--)
 	{
 		digit = (n >> count) & 1;
@@ -30,5 +24,9 @@ void print_binary(unsigned long int n)
 		{
 			_putchar('0');
 		}
+	}
+	if (n == 0)
+	{
+		_putchar('0');
 	}
 }
