@@ -10,10 +10,8 @@
 
 void print_binary(unsigned long int n)
 {
-	int one, count;
+	int count;
 	unsigned long int digit;
-
-	one = 0;
 
 	if (n == 0)
 	{
