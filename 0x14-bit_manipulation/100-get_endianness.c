@@ -16,6 +16,6 @@ int get_endianness(void)
 
 	if (*c == 0x10)
 		return (1);
-	
+
 	return (0);
 }
