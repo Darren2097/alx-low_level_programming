@@ -10,13 +10,18 @@
 
 void print_binary(unsigned long int n)
 {
-	int count;
+	int count, one;
 	unsigned long int digit;
 
+	one = 0;
 	for (count = 63; count >= 0; count--)
 	{
 		digit = (n >> count) & 1;
 		if (digit == 1)
+		{
+			one = 1;
+		}
+		if (one == 1)
 		{
 			_putchar(((n >> count) & 1) + '0');
 		}
