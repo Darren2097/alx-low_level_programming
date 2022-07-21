@@ -1,6 +1,25 @@
 #include "main.h"
-#include "math.h"
 #include <stdio.h>
+
+/**
+ * _power - power of number
+ * @base: base
+ * @exp: exponent
+ *
+ * Return: result
+ */
+
+int _power(int base, int exp)
+{
+	int i, pow;
+
+	pow = 0;
+	for (i = 0; i < exp; i++)
+	{
+		pow = pow * base;
+	}
+	return (pow);
+}
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned int
@@ -13,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num;
 	int length, i;
-
+	
 	if (b == NULL)
 		return (0);
 
@@ -35,7 +54,7 @@ unsigned int binary_to_uint(const char *b)
 		{
 			return (0);
 		}
-		num += (b[i] - '0') * pow(2, length - i - 1);
+		num += (b[i] - '0') * _power(2, length - i -1);
 	}
 
 	return (num);
