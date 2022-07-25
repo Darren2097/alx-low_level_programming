@@ -44,8 +44,9 @@ void error_messages(int exit_code, char *err_msg, char type, ...)
 
 int main(int argc, char *argv[])
 {
-	int fd1, fd2, fd1_read, fd2_write;
+	int fd1, fd2;
 	char buf[1024];
+	ssize_t fd1_read, fd2_write;
 
 	if (argc != 3)
 		error_messages(97, "Usage: cp file_from file_to\n", 'N');
@@ -58,16 +59,15 @@ int main(int argc, char *argv[])
 	if (fd2 == -1)
 		error_messages(99, "Error: Can't write to %s\n", 's', argv[2]);
 
-	fd1_read = read(fd1, buf, 1024);
-	if (fd1_read == -1)
-		error_messages(98, "Error: Can't read from file %s\n", 's', argv[1]);
-
-	while (fd1_read > 0)
+	while ((fd1_read = read(fd1, buf, 1024)) != EOF)
 	{
 		fd2_write = write(fd2, buf, fd1_read);
 		if (fd2_write == -1)
 			error_messages(99, "Error: Can't write to %s\n", 's', argv[2]);
 	}
+
+	if (fd1_read == -1)
+		error_messages(98, "Error: Can't read from file %s\n", 's', argv[1]);
 
 	if (close(fd1) == -1)
 		error_messages(100, "Error: Can't close fd %d\n", 'd', fd1);
