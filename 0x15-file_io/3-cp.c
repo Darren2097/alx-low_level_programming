@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 	if (fd2 == -1)
 		error_messages(99, "Error: Can't write to %s\n", 's', argv[2]);
 
-	while ((fd1_read = read(fd1, buf, 1024)) != EOF)
+	while ((fd1_read = read(fd1, buf, 1024)) > 0)
 	{
 		fd2_write = write(fd2, buf, fd1_read);
 		if (fd2_write == -1)
