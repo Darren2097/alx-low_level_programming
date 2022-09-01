@@ -4,7 +4,7 @@
 /**
  * dlistint_len - returns the number of elements in a dlistint_t list
  * @h: head of doubly linked list
- * 
+ *
  * Return: number of nodes
  */
 
@@ -44,7 +44,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 	if (idx == 0)
 		return (add_dnodeint(h, n));
-	
+
 	length = dlistint_len(*h);
 	if (idx == length - 1)
 		return (add_dnodeint_end(h, n));
