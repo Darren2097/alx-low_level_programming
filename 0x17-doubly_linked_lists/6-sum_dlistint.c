@@ -10,7 +10,7 @@
 
 int sum_dlistint(dlistint_t *head)
 {
-	int sum;
+	int sum = 0;
 	dlistint_t *node;
 
 	if (head == NULL)
