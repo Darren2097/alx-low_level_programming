@@ -25,8 +25,11 @@ void hash_table_delete(hash_table_t *ht)
 			free(node->key);
 			free(node->value);
 			free(node);
-			node = next_node;
-			if (node == NULL)
+			if (node->next != NULL)
+			{
+				node = node->next;
+			}
+			else
 				break;
 		}
 	}
