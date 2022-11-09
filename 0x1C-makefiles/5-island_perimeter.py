@@ -40,22 +40,3 @@ def island_perimeter(grid):
     perimeter = (2 * length) + (2 * breadth)
 
     return perimeter
-
-
-if __name__ == "__main__":
-    grid = [
-            [0, 0, 0, 0, 0, 0],
-            [0, 1, 0, 0, 0, 0],
-            [0, 1, 0, 0, 0, 0],
-            [0, 1, 1, 1, 0, 0],
-            [0, 0, 0, 0, 0, 0]
-            ]
-
-    print(island_perimeter(grid))
-
-    grid = [
-            [1, 1],
-            [1, 1]
-            ]
-
-    print(island_perimeter(grid))
