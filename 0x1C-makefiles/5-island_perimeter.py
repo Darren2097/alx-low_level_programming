@@ -28,8 +28,6 @@ def island_perimeter(grid):
                 ones += 1
         if ones > length:
             length = ones
-        elif ones < length or ones == length:
-            length = ones
 
     for c in range(columns):
         ones = 0
@@ -37,8 +35,6 @@ def island_perimeter(grid):
             if grid[r][c] == 1:
                 ones += 1
         if ones > breadth:
-            breadth = ones
-        elif ones < breadth or ones == breadth:
             breadth = ones
 
     perimeter = (2 * length) + (2 * breadth)
