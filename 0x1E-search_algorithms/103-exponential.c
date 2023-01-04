@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * print_array - prints an array
+ * print_arr - prints an array
  * @array: pointer to array
  * @f: index of first element to print
  * @l: index of last element to print
@@ -22,9 +22,8 @@ void print_arr(int *array, size_t f, size_t l)
 
 
 /**
- * binary_search - search for value in array using Binary search algorithm
+ * bnry_search - search for value in array using Binary search algorithm
  * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
  * @value: value to search for
  * @f: first index of array
  * @l: last index of array
