@@ -8,7 +8,7 @@
  * @l: index of last element to print
  */
 
-void print_array(int *array, size_t f, size_t l)
+void print_arr(int *array, size_t f, size_t l)
 {
 	size_t i = 0;
 
@@ -33,9 +33,9 @@ void print_array(int *array, size_t f, size_t l)
  * present in array or if array is NULL
  */
 
-int binary_search(int *array, size_t size, int value, int f, int l)
+int bnry_search(int *array, int value, int f, int l)
 {
-	size_t m = 0;
+	int m = 0;
 
 	if (array == NULL)
 		return (-1);
@@ -43,7 +43,7 @@ int binary_search(int *array, size_t size, int value, int f, int l)
 
 	while (f <= l)
 	{
-		print_array(array, f, l);
+		print_arr(array, f, l);
 		m = (f + l) / 2;
 		if (array[m] > value)
 			l = m - 1;
@@ -87,5 +87,5 @@ int exponential_search(int *array, size_t size, int value)
 		l = size + 1;
 
 	printf("Value found between indexes [%d] and [%d]\n", f, l);
-	return (binary_search(array, size, value, f, l));
+	return (bnry_search(array, value, f, l));
 }
