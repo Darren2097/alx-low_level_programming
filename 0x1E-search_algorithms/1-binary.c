@@ -5,11 +5,11 @@
  * @array: array to be prnted
  * @l: index of first element in array
  * @r: index of last element in array
- * 
+ *
  * Return: void
  */
 
-void print_array(int *array, size_t m, size_t l)
+void print_array(int *array, size_t l, size_t r)
 {
 	size_t i = 0;
 
